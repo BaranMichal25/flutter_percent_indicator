@@ -17,29 +17,7 @@ class _SampleCircularPageState extends State<SampleCircularPage> {
       body: Center(
         child: ListView(
           padding: const EdgeInsets.symmetric(vertical: 10),
-          children: <Widget>[
-            CircularPercentIndicator(
-              radius: 120.0,
-              lineWidth: 13.0,
-              animation: true,
-              animationDuration: 3000,
-              percent: 0.7,
-              animateFromLastPercent: true,
-              center: Text(
-                "70.0%",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0),
-              ),
-              footer: Text(
-                "Sales this week",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17.0),
-              ),
-              circularStrokeCap: CircularStrokeCap.round,
-              progressColor: Colors.purple,
-              widgetIndicator: RotatedBox(
-                quarterTurns: 1,
-                child: Icon(Icons.airplanemode_active, size: 30),
-              ),
-            ),
+          children: [
             CircularPercentIndicator(
               radius: 100.0,
               lineWidth: 10.0,
